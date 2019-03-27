@@ -1,25 +1,27 @@
-JSONPºÍHttpClientÇø±ð:
-	JSONPËµÃ÷:
-		1.½â¾ö¿çÓòÎÊÌâµÄ
-		2.ÊÇä¯ÀÀÆ÷½âÎöAJAXÇëÇóÊ±·¢ÆðµÄ¿çÓòÇëÇó
-		3.·¢ÆðÇëÇóÖ±½Ó·ÃÎÊµÄÊÇºóÌ¨·þÎñÆ÷
-		4.·µ»ØÖµÊý¾Ý¾ßÓÐÌØÊâµÄ¸ñÊ½ÒªÇó.Callback(json)
-	HttpClientËµÃ÷:
-		1.ÊÇÒµÎñ²ã(java´úÂë)·¢ÆðµÄHttpÇëÇóµÄÒ»ÖÖ¹¤¾ßAPI
-		2.Ê×ÏÈ¾­¹ýÇ°Ì¨Controller½ÓÊÕÊý¾Ý,Ö®ºóÓÐService·¢ÆðHTTPÇëÇó,·ÃÎÊºóÌ¨Êý¾Ý
-		3.¿ÉÒÔ½ÓÊÕºóÌ¨ÈÎºÎÐÎÊ½µÄÊý¾Ý
-		4.httpclient ¸üÍ¨ÓÃ.Î¢·þÎñ(springcloud)µ×²ãµ÷ÓÃhttpclient
+JSONPå’ŒHttpClientåŒºåˆ«:
+	JSONPè¯´æ˜Ž:
+		1.è§£å†³è·¨åŸŸé—®é¢˜çš„
+		2.æ˜¯æµè§ˆå™¨è§£æžAJAXè¯·æ±‚æ—¶å‘èµ·çš„è·¨åŸŸè¯·æ±‚
+		3.å‘èµ·è¯·æ±‚ç›´æŽ¥è®¿é—®çš„æ˜¯åŽå°æœåŠ¡å™¨
+		4.è¿”å›žå€¼æ•°æ®å…·æœ‰ç‰¹æ®Šçš„æ ¼å¼è¦æ±‚.Callback(json)
+	HttpClientè¯´æ˜Ž:
+		1.æ˜¯ä¸šåŠ¡å±‚(javaä»£ç )å‘èµ·çš„Httpè¯·æ±‚çš„ä¸€ç§å·¥å…·API
+		2.é¦–å…ˆç»è¿‡å‰å°ControlleræŽ¥æ”¶æ•°æ®,ä¹‹åŽæœ‰Serviceå‘èµ·HTTPè¯·æ±‚,è®¿é—®åŽå°æ•°æ®
+		3.å¯ä»¥æŽ¥æ”¶åŽå°ä»»ä½•å½¢å¼çš„æ•°æ®
+		4.httpclient æ›´é€šç”¨.å¾®æœåŠ¡(springcloud)åº•å±‚è°ƒç”¨httpclient
 		
 
-cookie±»½ûÓÃÈçºÎ´¦Àí:
+cookieè¢«ç¦ç”¨å¦‚ä½•å¤„ç†:
 
-	²ßÂÔ1:ÊµÏÖURLÖØÐ´¼¼Êõ
-	Æ©Èç:µØÖ·?sessionId=xxxxxxxx
-	²½Öè:
-			1.Éú³ÉsessionId
-			2.½«Sessionid±£´æµ½ÓòÖÐ
-			3.·¢ÆðµÄÇëÇóÊ±¶¯Ì¬»ñÈ¡sessionid½øÐÐurlÆ´½Ó
-	ÎÊÌâ:
-			1.Ã¿´Î·¢ÇëÇó¶¼ÐèÒª½øÐÐÊý¾ÝµÄÆ´½Ó
-			2.ÒµÎñ²ã±ØÐëÏÈ»ñÈ¡sessionid,Ö®ºó±£´æµ½ÓòÖÐ,Ã¿¸ö·½·¨¶¼ÐèÒªÌí¼Ó¸Ã²Ù×÷
-			===>Ó°ÏìºóÌ¨ÒµÎñÊµÏÖ Ð§ÂÊ¼«µÍ
+	ç­–ç•¥1:å®žçŽ°URLé‡å†™æŠ€æœ¯
+	è­¬å¦‚:åœ°å€?sessionId=xxxxxxxx
+	æ­¥éª¤:
+			1.ç”ŸæˆsessionId
+			2.å°†Sessionidä¿å­˜åˆ°åŸŸä¸­
+			3.å‘èµ·çš„è¯·æ±‚æ—¶åŠ¨æ€èŽ·å–sessionidè¿›è¡Œurlæ‹¼æŽ¥
+	é—®é¢˜:
+			1.æ¯æ¬¡å‘è¯·æ±‚éƒ½éœ€è¦è¿›è¡Œæ•°æ®çš„æ‹¼æŽ¥
+			2.ä¸šåŠ¡å±‚å¿…é¡»å…ˆèŽ·å–sessionid,ä¹‹åŽä¿å­˜åˆ°åŸŸä¸­,æ¯ä¸ªæ–¹æ³•éƒ½éœ€è¦æ·»åŠ è¯¥æ“ä½œ
+			===>å½±å“åŽå°ä¸šåŠ¡å®žçŽ° æ•ˆçŽ‡æžä½Ž
+			12312312312
+			
