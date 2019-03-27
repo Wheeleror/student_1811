@@ -1,0 +1,25 @@
+JSONP和HttpClient区别:
+	JSONP说明:
+		1.解决跨域问题的
+		2.是浏览器解析AJAX请求时发起的跨域请求
+		3.发起请求直接访问的是后台服务器
+		4.返回值数据具有特殊的格式要求.Callback(json)
+	HttpClient说明:
+		1.是业务层(java代码)发起的Http请求的一种工具API
+		2.首先经过前台Controller接收数据,之后有Service发起HTTP请求,访问后台数据
+		3.可以接收后台任何形式的数据
+		4.httpclient 更通用.微服务(springcloud)底层调用httpclient
+		
+
+cookie被禁用如何处理:
+
+	策略1:实现URL重写技术
+	譬如:地址?sessionId=xxxxxxxx
+	步骤:
+			1.生成sessionId
+			2.将Sessionid保存到域中
+			3.发起的请求时动态获取sessionid进行url拼接
+	问题:
+			1.每次发请求都需要进行数据的拼接
+			2.业务层必须先获取sessionid,之后保存到域中,每个方法都需要添加该操作
+			===>影响后台业务实现 效率极低
